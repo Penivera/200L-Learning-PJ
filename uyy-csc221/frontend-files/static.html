@@ -1,0 +1,53 @@
+<html>
+    <head></head>
+    <body>
+        <h4>Peniel Sunday Ben</h4>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>List item</th>
+                    <th>Content</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <button id="cosbtn">COS221</button>
+                    </td>
+                    <td>
+                        <span id="cos"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button id="cscbtn">CSC221</button>
+                    </td>
+                    <td>
+                        <span id="csc221"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button id="logoutbtn">CSC222</button>
+                    </td>
+                    <td>
+                        <span id="logout"></span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <script>
+            document.getElementById("cosbtn").addEventListener("click", () => {
+                document.getElementById("cos").innerHTML = "Programming in Java";
+            });
+
+            document.getElementById("cscbtn").addEventListener("click", () => {
+                document.getElementById("csc221").innerHTML = "Discrete structures";
+            });
+
+            document.getElementById("logoutbtn").addEventListener("click", () => {
+                document.getElementById("logout").innerHTML = "Logic Circuit";
+            });
+        </script>
+    </body>
+</html>
