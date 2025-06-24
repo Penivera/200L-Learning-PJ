@@ -1,0 +1,298 @@
+/* Style for Form.html */
+
+body{
+    margin: 1em ;
+    max-width: 100%; 
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f9f2c9; /* Light beige background */
+    font-family: Arial, sans-serif; /* Changed for better readability */
+}
+#wrap{
+	width; 100%;
+	display: Fixed;
+}
+.container {
+	  max-width: 100%;
+    padding: 2em;
+    background-color: #ffffff; /* White background for the container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+header{
+	max-width: 100%;
+	display: flex; /* Ensure flex layout for proper alignment */
+  justify-content: space-between; /* Space out header items */
+  align-items: center; /* Align items vertically */
+  padding: 10px; /* Optional: adjust as needed */
+  position: relative;
+	#dark_mode{
+		position: absolute; /* Position it relative to the header */
+    top: 10px; /* Adjust to fit your layout */
+    right: 20px; /* Adjust to fit your layout */
+    
+		/*margin-left: 13em*/
+	
+	}
+}
+h2 {
+    text-align: center;
+    color: #003366; /* Dark blue color */
+    margin-bottom: 1em;
+    font-size: 2em; /* Slightly larger font size for emphasis */
+}
+
+button {
+    background-color: #2429f7; /* Blue background */
+    color: whitesmoke;
+    font-weight: bold;
+    border: none;
+    border-radius: 2em;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    margin: 0.5em; /* Uniform margin around buttons */
+}
+
+button:hover {
+    background-color: #37abfa; /* Lighter blue on hover */
+}
+
+button.select {
+    background-color: #e74c3c; /* Red background for selected state */
+}
+
+/* Style for input fields within the table */
+table input[type="text"],
+table input[type="number"] {
+    background-color: #f9f9f9; /* Light grey background to blend with table */
+    color: #333; /* Dark text color for readability */
+    border: 1px solid #ccc; /* Light border color */
+    border-radius: 4px; /* Slightly rounded corners */
+    padding: 0.5em; /* Add some padding */
+    width: 100%; /* Full width within table cell */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Style for table cells */
+table td {
+    padding: 0.5em; /* Add some padding to table cells */
+}
+
+/* Add subtle hover effect for table rows */
+table tr:hover {
+    background-color: #f1f1f1; /* Very light grey background on hover */
+}
+
+/* Style for table headers */
+th {
+    background-color: #003366; /* Dark blue background for headers */
+    color: whitesmoke; /* Light text color */
+    font-weight: bold; /* Bold text */
+    padding: 0.5em; /* Add some padding */
+}
+
+button.select:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}
+table{
+	width: 100%;
+}
+input[type="text"], input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%; /* Full width of parent container */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    margin-bottom: 1em; /* Space below inputs */
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+    background-color: #f0f8ff;
+    border-color: #3498db;
+    color: #2c3e50; 
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5); 
+}
+.error_cell {
+    background-color: #f0f8ff; /* Fixed missing semicolon */
+    color: #721c24; 
+    border: 1px solid red; /* Fixed border syntax */
+    font-weight: bold;
+    text-align: center; /* Fixed colon (:) to semicolon (;) */
+    box-shadow: 0px 0px 5px red; /* Added a shadow effect to highlight the error cell */
+}
+
+
+.select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 50%;
+    box-sizing: border-box;
+    margin-bottom: 1em;
+}
+
+#col {
+    margin-top: 2em;
+    width: 100% auto;
+}
+/* Style for result box *//* Style for result box */
+.result-box {
+    margin-top: 2em;
+    padding: 1em;
+    background-color: #ffffff; /* White background for contrast */
+    border: 1px solid #003366; /* Dark blue border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    display: flex; /* Use Flexbox */
+    justify-content: space-between; /* Space between the items */
+    align-items: center; /* Center align items vertically */
+    width: 80%; /* Adjust width as needed */
+    margin-left: auto; /* Center the box horizontally */
+    margin-right: auto; /* Center the box horizontally */
+    margin-bottom: 2em;
+}
+
+.result-box output {
+    display: inline-block; /* Display items inline */
+    padding: 0.5em;
+    font-size: 1.5em; /* Larger font size for better readability */
+    border-radius: 4px; /* Rounded corners */
+    text-align: center; /* Center align text */
+}
+
+.result-box #display1 {
+    background-color: #f0f8ff; /* Light blue background */
+    border: 1px solid #3498db; /* Blue border */
+    color: #2c3e50; /* Dark text color */
+}
+
+.result-box #display2 {
+    background-color: #fef4f4; /* Very light red background */
+    border: 1px solid #e74c3c; /* Red border */
+    color: #721c24; /* Dark red text color */
+}
+/*Dark mode*/
+/* Basic Reset */
+.dark-mode header {
+    display: flex; /* Ensure flex layout for proper alignment */
+    justify-content: space-between; /* Space out header items */
+    align-items: center; /* Align items vertically */
+    padding: 10px; /* Optional: adjust as needed */
+    position: relative; /* Positioning context for absolutely positioned child */
+}
+
+.dark-mode #dark_mode {
+    position: absolute; /* Position it relative to the header */
+    top: 10px; /* Adjust to fit your layout */
+    right: 10px; /* Adjust to fit your layout */
+    background-color: black;
+    border-radius: 50%;
+}
+
+/* Global Styles */
+.dark-mode body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Dark Mode Styling */
+.dark-mode body {
+    background-color: #121212; /* Dark background */
+    color: #f0f0f0; /* Light text */
+    width: 100vw;
+    height: 100vh;
+    max-width: 1200px; /* Corrected from 1200p to 1200px */
+}
+
+.dark-mode #Wrap {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #1e1e1e; /* Slightly lighter than body for contrast */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Styling */
+.dark-mode button {
+    background-color: #444;
+    color: #f0f0f0;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dark-mode button:hover {
+    background-color: #666;
+}
+
+.dark-mode button.select {
+    background-color: #007acc; /* Highlight color when selected */
+}
+
+/* Input Styling */
+.dark-mode input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #2b2b2b;
+    color: #f0f0f0;
+}
+
+/* Table Styling */
+.dark-mode table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.dark-mode th, td {
+    padding: 10px;
+    border: 1px solid #444;
+}
+
+.dark-mode thead th {
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+.dark-mode .error_cell {
+    border: 2px solid red; 
+}
+
+
+.dark-mode .result-box {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #2b2b2b;
+    border-radius: 4px;
+    text-align: center;
+    color: #f0f0f0;
+}
+
+#display1, #display2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+.dark-mode @media (max-width: 600px) {
+    #Wrap {
+        padding: 15px;
+    }
+
+    button, input {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
