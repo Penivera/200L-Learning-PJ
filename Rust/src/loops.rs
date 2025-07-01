@@ -1,3 +1,4 @@
+
 fn main(){
     let mut counter:i32 = 1;
     while counter <= 10 {

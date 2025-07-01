@@ -1,6 +1,7 @@
 #[allow(unused_imports)]
 use std::env::{Args,args,vars,set_var};
 use std::io::{stdin, Error, stdout, Write};
+
 fn input(prompt: &str) -> Result<String, Error> {
     print!("{prompt}");
     #[allow(unused_must_use)]
@@ -10,7 +11,7 @@ fn input(prompt: &str) -> Result<String, Error> {
     return Ok(data)
 }
 
-fn main() {
+fn smt() {
     // let command_line_args:Args = args();
     // println!("The command line arguments are: [{:?}]",command_line_args.collect::<Vec<String>>());
     // //for var in vars(){println!("{var:?}");}

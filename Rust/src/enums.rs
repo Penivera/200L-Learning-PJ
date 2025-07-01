@@ -11,6 +11,7 @@ fn main(){
         Person::Hair => println!("Person's Hair"),
     }
     let test = "ABIDOSHEKA";
+    
     match test {
         "Noneses" => println!("well.."),
         _ => {},

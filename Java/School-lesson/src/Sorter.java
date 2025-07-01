@@ -1,6 +1,6 @@
 import java.util.Objects;
 import java.util.Scanner;
-public class Main {
+public class Sorter {
     static Scanner input = new Scanner(System.in);
     public static void println(Object message){
         System.out.println(message);
