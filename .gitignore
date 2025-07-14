@@ -84,3 +84,30 @@ nbdist/
 *.jar
 *.war
 *.ear
+# Assembly build artifacts
+*.o
+*.out
+*.bin
+*.exe
+*.elf
+*.obj
+*.map
+
+# macOS-specific binary
+*.dSYM/
+*.DS_Store
+
+# Executable outputs
+prod*
+sum*
+circle*
+area*
+*
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Logs and temp
+*.log
+*.tmp
