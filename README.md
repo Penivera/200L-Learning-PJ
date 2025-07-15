@@ -1,4 +1,4 @@
-# 📚 Programming Courses – Semester Repository
+# 📚 Programming Courses : Semester Repository
 
 This repository contains all the programming courses I'm currently working on this semester. It includes both academic coursework and personal learning projects.  
 Each course is organized into its own directory for clarity and easy navigation.
