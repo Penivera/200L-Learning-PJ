@@ -1,0 +1,1 @@
+input("Enter 3 Numbers: ")

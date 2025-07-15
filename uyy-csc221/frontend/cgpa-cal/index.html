@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Form.css">
+        <title>CGPA & GPA CALCULATOR</title>
+    </head>
+    <body>
+        <div id="Wrap">
+        	<header>
+            <button id="GPA">GPA</button>
+        	  <button id="CGPA">CGPA</button> 
+        	  <a href="#" id="dark_mode" onclick="darkmode()"><img src="dark-theme.svg"> </a><br>
+        	</header>
+            <input id="col" type="number"  placeholder="No. of Courses"><br>
+            <button id="submit">Proceed</button>
+
+            <div id="table-container"></div>
+            <datalist id="grades">
+            	  <option value="A">
+                <option value="B">      	
+                <option value="C">     
+                <option value="D">    
+                <option value="E">     
+                <option value="F">
+            </datalist>
+            <datalist id="creditun">
+            	  <option value="1">
+                <option value="2">      	
+                <option value="3">     
+                <option value="4">    
+            </datalist>
+            <div class="result-box">
+              <output id="display1"></output>
+              <a href="#" id="refresh" onclick="refreshBtn()"> <img src="refresh.svg"></a>
+              <output id="display2"></output>
+             </div>
+        </div>
+        <script src="Form.js"></script>
+    </body>
+</html>
