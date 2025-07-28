@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Form to do something</title>
+        </head>
+        <body>
+            <h2>Simple Form</h2>
+            <form method="post" action="{{url_for('submit')}}">
+                <label for="staff_name">Staff Name:</label><br>
+                <input type="text" id="staff_name" name="staff_name" required><br><br>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" required><br><br>
+                <button type="submit">Login</button>
+            </form>
+        </body>
+    </html>

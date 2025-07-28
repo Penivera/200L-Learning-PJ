@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Student Score</title>
+</head>
+<body>
+    <div>
+        <form action="{{ url_for('result') }}" method="post">
+            <p>
+                Name <br><input type="text" name="Name"><br>
+                RegNo <br><input type="text" name="RegNo"><br>
+                Department <br><input type="text" name="Department">
+            </p>
+            <p>
+                Cos221 <input type="text" name="Cos221">
+                CYB221 <input type="text" name="CYB221">
+                Ent221 <input type="text" name="Ent221">
+                Csc221 <input type="text" name="Csc221">
+            </p>
+            <p>
+                <input type="submit" value="Submit">
+            </p>
+        </form>
+    </div>
+</body>
+</html>

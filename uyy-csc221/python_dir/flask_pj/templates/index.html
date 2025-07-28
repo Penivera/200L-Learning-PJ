@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+
+{% block header %}
+<h2>Welcome to UYY-CSC221</h2>
+{% endblock %}
+
+{% block content %}
+<p>This is your course dashboard.</p>
+<ul>
+  <li><a href="{{ url_for('about') }}">Course Overview</a></li>
+  <li><a href="{{ url_for('help') }}">Need Help?</a></li>
+</ul>
+{% endblock %}
